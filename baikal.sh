@@ -5,7 +5,6 @@ rm -rf .repo/local_manifests
 rm -rf device/xiaomi/mojito
 rm -rf vendor/xiaomi/mojito
 rm -rf kernel/xiaomi/mojito
-rm -rf packages/modules/Bluetooth
 
 # Local TimeZone
 sudo rm -rf /etc/localtime
@@ -22,10 +21,6 @@ git clone -b baikal https://github.com/Baikal-OS/local_manifests .repo/local_man
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
-
-# Custom android_packages_modules_Bluetooth
-rm -rf packages/modules/Bluetooth
-git clone -b 13.0 https://github.com/Baikal-OS/android_packages_modules_Bluetooth.git packages/modules/Bluetooth
 
 # Sync the repositories
 /opt/crave/resync.sh
