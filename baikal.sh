@@ -5,7 +5,6 @@ rm -rf .repo/local_manifests
 rm -rf device/xiaomi/mojito
 rm -rf vendor/xiaomi/mojito
 rm -rf kernel/xiaomi/mojito
-rm -rf platform/external/bouncycastle
 
 # Local TimeZone
 sudo rm -rf /etc/localtime
@@ -26,11 +25,6 @@ echo "============================"
 # Sync the repositories
 /opt/crave/resync.sh
 echo "============================"
-
-# Export
-export BUILD_USERNAME="Sachin"
-export BUILD_HOSTNAME="crave"
-echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
